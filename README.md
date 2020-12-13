@@ -26,15 +26,34 @@ To improve customer's experience and reduce the time needed to place an order, I
 The dataset is a relational set of files describing customers' orders over time, and can be found at the following location: https://www.kaggle.com/c/instacart-market-basket-analysis/data.
 
 
-
-
-
-
-
-
-
 •Data was
 aggregated to create one row per customer’s per item purchased
+
+
+
+
+
+
+
+
+
+•Aggregation was done based on the
+following conditions:
+
+
+•By items purchased from 
+all customer’s orders
+
+
+•By items purchased from the last 5 orders of the
+customer
+
+
+•Department of the item was also
+kept as the natural category of the items
+
+
+•Null values were set to 0
 
 
 
