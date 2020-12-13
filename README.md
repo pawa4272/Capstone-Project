@@ -1,4 +1,3 @@
-# Capstone-Project
 # Improving Instacart 1 customer at a time via Basket Analysis
 by Paulette Rodrigues
 
@@ -59,11 +58,12 @@ kept as the natural category of the items
 
 # Modeling
 
-Best Model: Logistic Regression
-Sensitivity: 0.6896 
-Specificity: 0.7388
+- Best Model: Logistic Regression
+- Sensitivity: 0.6896 
+- ecificity: 0.7388
 
 # Next Steps
-Train the data with other models
-Apply grid search to the best model
-Add / remove other features to get the optimal solution
+
+- Train the data with other models
+- Apply grid search to the best model
+- Add / remove other features to get the optimal solution
