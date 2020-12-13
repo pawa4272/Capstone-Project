@@ -1,3 +1,5 @@
+![](https://i.chzbgr.com/full/9034875648/h6A5212A2/made-into-a-meme-captioned-the-difference-between-meme-and-you-is-that-i-make-these-look-good)
+
 # Improving Instacart 1 customer at a time via Basket Analysis
 by Paulette Rodrigues
 
