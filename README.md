@@ -5,7 +5,7 @@ by Paulette Rodrigues
 
 - [Introduction](project-title)
 - [Introduction](#introduction)
-- [Data](#data-cleaning)
+- [Data](#data)
 - [Modeling](#modeling)
 - [Next Steps](#next-steps)
 
@@ -29,13 +29,6 @@ The dataset is a relational set of files describing customers' orders over time,
 aggregated to create one row per customer’s per item purchased
 
 
-
-
-
-
-
-
-
 •Aggregation was done based on the
 following conditions:
 
@@ -54,9 +47,39 @@ kept as the natural category of the items
 
 •Null values were set to 0
 
+### Data Dictionary
+
+Final aggregated dataset used.
+
+|Feature|dtype|Description|
+|---|---|---|
+|user_product |object| Concatenation of user id and product is |
+|department| object |Department in which the product belongs |
+|times_ordered | int64 | The number of times the user purchase the product in their prior orders |
+|total_orders| int64 | The number of times the user shopped on Instacart |
+|pct_reorder| float64  |times_ordered / total_orders |
+|max_days_bet| float64 |Maximum number of days between customer's orders|
+|avg_days_bet|float64|Avgerage number of days between customer's orders|
+|min_reorder_days|float64|Minimum reorder days between customer's orders|
+|max_reorder_days|float64|Maximum reorder days between customer's orders|
+|avg_reorder_days|float64|Average reorder days between customer's orders|
+|target|int64|Reordered, for train/test 1 - Yes, 0 - No|
+|last5_times_item_pur|float64|The number of times the user purchase the product in their last 5 orders |
+|last5_total_orders|float64|The number of times the user shopped on Instacart (last 5 orders), if users order; 5 if >= 5 else number of orders |
+|last5_pct_order|float64|last5_times_item_pur / last5_total_orders|
+|min_days_5odrs|float64|Minimum number of days between customer's orders|
+|max_days_5odrs|float64|Maximum number of days between customer's orders|
+|avg_days_5odrs|float64|Average number of days between customer's orders|
+|min_reorder_5days|float64|Minimum number of days between customer's orders|
+|max_reorder_5days|float64|Maximum number of days between customer's orders|
+|avg_reorder_5days|float64|Average number of days between customer's orders|
+|avg_items_ordered|float64|Average number of items ordered in a customer's history|
+|last5_avg_items|float64|Average number of items ordered in a customer's last 5 purchase|
 
 
 # Modeling
+
+Since the data set is imbalance, a sample of 500,000 rows were selected and then SMOTE was applied to generate artificual rows and balance the binary classification. Several binary classification models were then generated to identify the best model
 
 - Best Model: Logistic Regression
 - Sensitivity: 0.6896 
@@ -65,5 +88,5 @@ kept as the natural category of the items
 # Next Steps
 
 - Train the data with other models
-- Apply grid search to the best model
+- Apply grid search to the best 3 models
 - Add / remove other features to get the optimal solution
