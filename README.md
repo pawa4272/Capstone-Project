@@ -1,5 +1,3 @@
-![Screenshot](./image/logo.png)
-
 # Improving Instacart 1 customer at a time via Basket Analysis
 by Paulette Rodrigues
 
