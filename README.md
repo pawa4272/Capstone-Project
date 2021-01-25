@@ -83,10 +83,11 @@ Since the data set is imbalance, a sample of 500,000 rows were selected and then
 
 - Best Model: Logistic Regression
 - Sensitivity: 0.6896 
-- ecificity: 0.7388
+- Specificity: 0.7388
 
 # Next Steps
 
+- Apply Principal Component Analysis (PCA) to the dataset
 - Train the data with other models
 - Apply grid search to the best 3 models
 - Add / remove other features to get the optimal solution
