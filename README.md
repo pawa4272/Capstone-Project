@@ -90,4 +90,4 @@ Since the data set is imbalance, a sample of 500,000 rows were selected and then
 - Apply Principal Component Analysis (PCA) to the dataset
 - Train the data with other models
 - Apply grid search to the best 3 models
-- Add / remove other features to get the optimal solution
+- Add / remove features to get the optimal solution
